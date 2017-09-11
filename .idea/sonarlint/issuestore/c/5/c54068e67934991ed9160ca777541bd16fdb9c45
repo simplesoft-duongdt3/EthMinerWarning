@@ -1,0 +1,15 @@
+
+vsquid:UselessImportCheck"MRemove this unused import 'duongmh3.bittrexmanager.model.MarketSummaryModel'.(ÊÉü8‚•Ó‹Ô+
+|squid:UselessImportCheck"SRemove this unused import 'duongmh3.bittrexmanager.common.list.RecyclerViewHolder'.(ÜÎØ8ïäÔ+
+tsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(©ó¯Å8‰íœ÷Ó+
+Jsquid:S1068".Remove this unused "marketName" private field.(šéš8ÍœŸåæ+
+Jsquid:S1068".Remove this unused "currentBid" private field.(şÄÄğ8ÍœŸåæ+
+Osquid:S1068".Remove this unused "currentAsk" private field.(øŞ®ßÿÿÿÿÿ8ÍœŸåæ+
+Nsquid:S1068"-Remove this unused "configMin" private field.(—àÿÿÿÿÿ8ÍœŸåæ+
+Hsquid:S1068"-Remove this unused "configMax" private field.(¥·³8ÍœŸåæ+
+Lsquid:S1068"0Remove this unused "coinImageUrl" private field.(èæ ß8ÍœŸåæ+
+Esquid:S1068"*Remove this unused "min24h" private field.(“âQ8ÍœŸåæ+
+Esquid:S1068"*Remove this unused "max24h" private field.(×¹î#8ÍœŸåæ+
+Hsquid:S1068"'Remove this unused "vol" private field.(ş¼ñøÿÿÿÿ8ÍœŸåæ+
+Qsquid:S1068"5Remove this unused "statusDescription" private field.(ÎîŠ«8ÍœŸåæ+
+Hsquid:S1068",Remove this unused "spanSize" private field.(‚Ê“§8ÍœŸåæ+
