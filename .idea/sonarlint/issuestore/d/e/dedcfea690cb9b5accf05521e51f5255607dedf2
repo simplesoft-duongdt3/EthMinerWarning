@@ -1,4 +1,5 @@
 
-osquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ÿÄÿ’8œÀºùÓ+
 Ysquid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ôã»‚Ô+
 rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(¦Û®ïùÿÿÿÿ
+Ysquid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ÕÍıŠç+
+Bsquid:S1948"&Make "data" transient or serializable.(Ïó¿’8ã¸şŠç+

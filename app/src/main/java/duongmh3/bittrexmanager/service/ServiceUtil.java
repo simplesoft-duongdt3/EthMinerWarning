@@ -36,6 +36,7 @@ public class ServiceUtil {
     }
 
     private static void startServiceUiWarning(Context context) {
+        context.stopService(new Intent(context, WarningChatHeadService.class));
         context.startService(new Intent(context, WarningChatHeadService.class));
     }
 

@@ -83,3 +83,5 @@ r
 Bapp/src/main/java/duongmh3/bittrexmanager/service/ServiceUtil.java,0/8/08ac01634e7d8166001861145b4c39f8fc24db78
 ‚
 Rapp/src/main/java/duongmh3/bittrexmanager/service/MinerCheckInfoIntentService.java,d/c/dc240fb04b8f9cafaf13d275eb1ee967c032c7d4
+†
+Vapp/src/main/java/duongmh3/bittrexmanager/service/BroadcastReceiverOnBootComplete.java,c/e/ce0536067f05886791c469ee7bd5d525b6d405ea

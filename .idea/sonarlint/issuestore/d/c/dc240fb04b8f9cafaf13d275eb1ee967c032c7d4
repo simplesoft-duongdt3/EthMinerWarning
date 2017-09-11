@@ -1,10 +1,5 @@
 
-jsquid:S1192"ODefine a constant instead of duplicating this literal "config_warning" 4 times.(±¾Ş
-8ÂæïƒÔ+
+Ysquid:S1197"8Move the array designator from the variable to the type.(ÅãáÍúÿÿÿÿ8šƒˆŒç+
+ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Áä…—ıÿÿÿÿ8âûÑ‹ç+
 Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÂæïƒÔ+
-ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 31 to the 15 allowed.(Áä…—ıÿÿÿÿ8ÆÕû€Ô+
-Gsquid:S1068"+Remove this unused "handler" private field.(Ìöñœ8ÆÕû€Ô+
-Msquid:S1612",Replace this lambda with a method reference.(ğâ¾Òúÿÿÿÿ8ÂæïƒÔ+
 msquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(Î¡“Ä
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÂæïƒÔ+
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÂæïƒÔ+

@@ -1,9 +1,11 @@
 
-Xsquid:UselessImportCheck"/Remove this unused import 'android.os.Handler'.(ûÛ’¡8 ÌÜ„Ô+
-Vsquid:UselessImportCheck".Remove this unused import 'android.os.Looper'.(âå8 ÌÜ„Ô+
 msquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(©ó¯Å
-[squid:UselessImportCheck"-Remove this unused import 'java.util.Locale'.(åğ×±ûÿÿÿÿ8 ÌÜ„Ô+
-\squid:UselessImportCheck".Remove this unused import 'android.view.View'.(Ø½­äşÿÿÿÿ8 ÌÜ„Ô+
 Xsquid:UselessImportCheck"/Remove this unused import 'java.util.Calendar'.(ÿÛö´8 ÌÜ„Ô+
-`squid:UselessImportCheck"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ8 ÌÜ„Ô+
+Xsquid:UselessImportCheck"/Remove this unused import 'android.os.Handler'.(ûÛ’¡8 ÌÜ„Ô+
 lsquid:UselessImportCheck"CRemove this unused import 'android.support.annotation.DrawableRes'.(âõ8 ÌÜ„Ô+
+osquid:MaximumInheritanceDepth"<This class has 7 parents which is greater than 5 authorized.(Ï«¬âùÿÿÿÿ8÷ß‹ç+
+`squid:UselessImportCheck"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ8 ÌÜ„Ô+
+Vsquid:UselessImportCheck".Remove this unused import 'android.os.Looper'.(âå8 ÌÜ„Ô+
+[squid:UselessImportCheck"-Remove this unused import 'java.util.Locale'.(åğ×±ûÿÿÿÿ8 ÌÜ„Ô+
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(°Ë•üÿÿÿÿ8ÑÛá‹ç+
+Tsquid:S1172"9Remove this unused method parameter "warningResultModel".(Ô‡Q8ÑÛá‹ç+
