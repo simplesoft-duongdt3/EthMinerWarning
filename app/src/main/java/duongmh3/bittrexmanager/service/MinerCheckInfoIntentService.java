@@ -61,8 +61,12 @@ public class MinerCheckInfoIntentService extends IntentService {
                 warningResultModel.setResult(WarningResultModel.Result.ERROR);
             }
 
-            if (warningResultModel.getResult() != WarningResultModel.Result.NORMAL) {
-                warningUser();
+            if (warningResultModel.getResult() == WarningResultModel.Result.WARNING) {
+                warning();
+            } else if (warningResultModel.getResult() == WarningResultModel.Result.ERROR) {
+                error();
+            } else {
+                normal();
             }
 
             warningResultModel.setTimeEnd(System.currentTimeMillis());
@@ -72,7 +76,11 @@ public class MinerCheckInfoIntentService extends IntentService {
         }
     }
 
-    private void warningUser() {
+    private void normal() {
+        ServiceUtil.setNumNetworkError(0);
+    }
+
+    private void warning() {
         if (ServiceUtil.isPlaySoundWhenWarning()) {
             playWarningShow();
         }
@@ -80,6 +88,22 @@ public class MinerCheckInfoIntentService extends IntentService {
         if (ServiceUtil.isVibrateWhenWarning()) {
             vibrate();
         }
+        ServiceUtil.setNumNetworkError(0);
+    }
+
+    private void error() {
+        int numNetworkError = ServiceUtil.getNumNetworkError();
+        if (numNetworkError >= 3) {
+            if (ServiceUtil.isPlaySoundWhenWarning()) {
+                playWarningShow();
+            }
+        }
+
+        if (ServiceUtil.isVibrateWhenWarning()) {
+            vibrate();
+        }
+
+        ServiceUtil.setNumNetworkError(numNetworkError + 1);
     }
 
     private void playWarningShow() {

@@ -36,7 +36,6 @@ public class ServiceUtil {
     }
 
     private static void startServiceUiWarning(Context context) {
-        context.stopService(new Intent(context, WarningChatHeadService.class));
         context.startService(new Intent(context, WarningChatHeadService.class));
     }
 
@@ -45,7 +44,7 @@ public class ServiceUtil {
         if (configWarning == null) {
             configWarning = new WarningSettingModel();
             configWarning.setWallet("e515DE92b0f8BF6055C13e12693402430BCEa764");
-            configWarning.setMinHashRate(650);
+            configWarning.setMinHashRate(650 * 1000000);
             configWarning.setMinNumberWorker(5);
         }
         return configWarning;
@@ -64,5 +63,13 @@ public class ServiceUtil {
 
     public static void setVibrateWhenWarning(boolean vibrate) {
         Paper.book().write("config_vibrate_warning", vibrate);
+    }
+
+    public static int getNumNetworkError() {
+        return Paper.book().read("config_num_net_error", 0);
+    }
+
+    public static void setNumNetworkError(int numNetworkError) {
+        Paper.book().write("config_num_net_error", numNetworkError);
     }
 }
