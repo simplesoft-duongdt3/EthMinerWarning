@@ -16,7 +16,13 @@ import lombok.Setter;
 @Getter
 @Setter
 public class WarningSettingModel implements Serializable {
+    @SerializedName("wallet")
+    @Expose
     private String wallet;
+    @SerializedName("minNumberWorker")
+    @Expose
     private int minNumberWorker;
+    @SerializedName("minHashRate")
+    @Expose
     private int minHashRate;
 }

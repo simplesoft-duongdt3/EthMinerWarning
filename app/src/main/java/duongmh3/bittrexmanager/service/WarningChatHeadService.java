@@ -76,6 +76,7 @@ public class WarningChatHeadService extends Service implements FloatingViewListe
                     calendar.setTimeInMillis(result.getTimeEnd());
                     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm", Locale.ENGLISH);
                     String timeFormat = simpleDateFormat.format(calendar.getTime());
+
                     iconView.setText(timeFormat);
                     startForeground(NOTIFICATION_ID, createNotification(timeFormat + ": " + status, bgNotification));
                 });

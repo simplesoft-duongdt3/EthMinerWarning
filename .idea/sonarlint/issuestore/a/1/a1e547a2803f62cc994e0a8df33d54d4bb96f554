@@ -1,8 +1,7 @@
 
-jsquid:MaximumInheritanceDepth"<This class has 7 parents which is greater than 5 authorized.(²Ú±Ž8í†½Ô+
-]squid:UselessImportCheck"4Remove this unused import 'android.widget.EditText'.(†Å›Ú8»øåŒç+
-bsquid:UselessImportCheck"4Remove this unused import 'es.dmoral.toasty.Toasty'.(–‹¹©øÿÿÿÿ8°¤å‹ç+
-_squid:UselessImportCheck"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8°¤å‹ç+
-†squid:UselessImportCheck"XRemove this unused import 'duongmh3.bittrexmanager.service.MinerCheckInfoIntentService'.(êÌÈÑýÿÿÿÿ8°¤å‹ç+
 ^squid:UselessImportCheck"0Remove this unused import 'butterknife.OnClick'.(ÔÌÓ¿ÿÿÿÿÿ8ÓõÝŒç+
+Isquid:S1604"(Make this anonymous inner class a lambda(ÖµØ·þÿÿÿÿ8Ñ›¢Úè+
+]squid:UselessImportCheck"4Remove this unused import 'android.widget.EditText'.(†Å›Ú8»øåŒç+
+jsquid:MaximumInheritanceDepth"<This class has 7 parents which is greater than 5 authorized.(²Ú±Ž8í†½Ô+
 msquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(¼ùÄ
+†squid:UselessImportCheck"XRemove this unused import 'duongmh3.bittrexmanager.service.MinerCheckInfoIntentService'.(êÌÈÑýÿÿÿÿ8°¤å‹ç+

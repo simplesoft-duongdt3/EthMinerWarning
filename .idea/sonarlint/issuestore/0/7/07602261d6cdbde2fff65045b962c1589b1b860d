@@ -1,6 +1,4 @@
 
-rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(¦Û®ïùÿÿÿÿ
-msquid:UselessImportCheck"?Remove this unused import 'com.google.gson.annotations.Expose'.(î³ÓÆùÿÿÿÿ8‚ÍâŠç+
-psquid:UselessImportCheck"GRemove this unused import 'com.google.gson.annotations.SerializedName'.(äöúõ8‚ÍâŠç+
-Ysquid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8‚ÍâŠç+
 Ysquid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8øÕ‚Ô+
+rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(¦Û®ïùÿÿÿÿ
+Ysquid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8‚ÍâŠç+

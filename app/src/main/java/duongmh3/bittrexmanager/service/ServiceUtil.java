@@ -5,9 +5,19 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.SystemClock;
+import android.support.annotation.NonNull;
+
+import com.google.gson.Gson;
+
+import java.io.IOException;
 
 import duongmh3.bittrexmanager.model.WarningSettingModel;
 import io.paperdb.Paper;
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 
 /**
  * Created by doanthanhduong on 2/3/17.
@@ -15,9 +25,11 @@ import io.paperdb.Paper;
 
 public class ServiceUtil {
     private static final int REQUEST_CODE_START_SERVICE = 1000;
-    private static final long INTERVAL_IN_MILLISECOND = 5 * 60 * 1000L;
+    //private static final long INTERVAL_IN_MILLISECOND = 5 * 60 * 1000L;
+    private static final long INTERVAL_IN_MILLISECOND = 20 * 1000L;
 
     public static void startServiceWarning(Context context) {
+        stopServiceCheckWarning(context);
         startServiceUiWarning(context);
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
         PendingIntent pendingIntent = createIntentStartServiceCheckWarning(context);
@@ -71,5 +83,42 @@ public class ServiceUtil {
 
     public static void setNumNetworkError(int numNetworkError) {
         Paper.book().write("config_num_net_error", numNetworkError);
+    }
+
+    public interface CallbackGetConfig {
+        void onDoneEvent(boolean success);
+    }
+
+    @NonNull
+    private static final OkHttpClient client = new OkHttpClient();
+
+    public static void getConfigWarningFromCloudAsync(@NonNull final CallbackGetConfig callbackGetConfig) {
+        Request request = new Request.Builder()
+                .url("https://shebeauty.com.vn/eth_warning_config.txt")
+                .build();
+
+        try {
+            client.newCall(request).enqueue(new Callback() {
+                @Override
+                public void onFailure(Call call, IOException e) {
+                    callbackGetConfig.onDoneEvent(false);
+                }
+
+                @Override
+                public void onResponse(Call call, Response response) throws IOException {
+                    if (response.isSuccessful()) {
+                        WarningSettingModel warningSettingModel = new Gson().fromJson(response.body().charStream(), WarningSettingModel.class);
+                        Paper.book().write("config_warning", warningSettingModel);
+                        callbackGetConfig.onDoneEvent(true);
+                    } else {
+                        callbackGetConfig.onDoneEvent(false);
+                    }
+                }
+            });
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            callbackGetConfig.onDoneEvent(false);
+        }
     }
 }

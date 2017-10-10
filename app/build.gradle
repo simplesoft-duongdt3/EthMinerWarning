@@ -10,8 +10,8 @@ android {
         applicationId "duongmh3.miner.warning"
         minSdkVersion 15
         targetSdkVersion 26
-        versionCode 101
-        versionName "1.0.1"
+        versionCode 200
+        versionName "2.0.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }

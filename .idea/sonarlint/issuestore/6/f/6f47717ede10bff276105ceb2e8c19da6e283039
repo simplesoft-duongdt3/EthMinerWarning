@@ -1,7 +1,7 @@
 
 Ysquid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8˜ £‹ç+
-ysquid:UselessImportCheck"KRemove this unused import 'duongmh3.bittrexmanager.listcoin.CoinViewModel'.(óŒÕØùÿÿÿÿ8˜ £‹ç+
-Bsquid:S1948"&Make "data" transient or serializable.(‘ç›8­¾˜Œç+
 rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(¦Û®ïùÿÿÿÿ
 gsquid:UselessImportCheck"?Remove this unused import 'android.support.annotation.NonNull'.(¼Åß8¿´£‹ç+
+Bsquid:S1948"&Make "data" transient or serializable.(‘ç›8­¾˜Œç+
 Ysquid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8¬Ãº‚Ô+
+ysquid:UselessImportCheck"KRemove this unused import 'duongmh3.bittrexmanager.listcoin.CoinViewModel'.(óŒÕØùÿÿÿÿ8˜ £‹ç+
